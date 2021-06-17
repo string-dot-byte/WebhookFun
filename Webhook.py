@@ -11,11 +11,13 @@ print('''
         1. Delete webhook
         2. Edit webhook
         3. Send webhook message
+        4. Edit webhook message
+        5. Delete webhook message
 ''')
 
 option = int(input('Select option >'))
 
-if option not in [1, 3]:
+if option not in [1, 2, 3, 4, 5]:
     print('Lol that\'s not a valid option.')
     exit()
 
@@ -24,7 +26,6 @@ if option == 1:
     requests.delete(webhookUrl)
     print('\nDeleted webhook  :)')
 elif option == 2:
-    r = requests.get(webhookUrl).json()
     name = input('\nInsert webhook name >')
     avatar = input('Insert avatar url >')
 
@@ -41,4 +42,13 @@ elif option == 3:
         tts = False
 
     data = {'content': content, 'tts': tts}
-    r = requests.post(webhookUrl, json = data)
+    requests.post(webhookUrl, json = data)
+elif option == 4:
+    messageId = input('Insert message ID >')
+    newContent = input('Insert new content >')
+
+    json = {'content': newContent}
+    requests.patch(webhookUrl + '/messages/' + messageId, json = json)
+elif option == 5:
+    messageId = input('Insert message ID >')
+    requests.delete(webhookUrl + '/messages/' + messageId)
