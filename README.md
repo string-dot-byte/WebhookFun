@@ -19,7 +19,7 @@ Nothing needed other than the url.
 
 ## Edit webhook
 
-`Edit webhook` requires the new name and avatar url. Can't change the webhook's channel as that requires authorization to it. 
+`Edit webhook` requires the new name (limited to 80 characters) and avatar url. Can't change the webhook's channel as that requires authorization to it. 
 The image url must be like so:
 
 ![image](https://user-images.githubusercontent.com/68619882/122314412-2300ff80-cee6-11eb-8f6d-a12ed15e8b83.png)
@@ -39,6 +39,10 @@ Input the message ID to edit it's message on.
 
 Input the message ID to delete it.
 
+
+---
+
+Open for Pull requests on this project and issues encountered.
 
 ---
 
