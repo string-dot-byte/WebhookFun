@@ -6,7 +6,7 @@ Run `pip install requests` in cmd to download.
 
 Run the python file and you will be prompted 5 options which are pretty obvious on how to respond to.
 
-![image](https://user-images.githubusercontent.com/68619882/122406236-aeae7680-cf4e-11eb-98d3-62a563e1677a.png)
+![image](https://user-images.githubusercontent.com/68619882/124368184-961bad00-dc2c-11eb-8dc6-418e0be4ba11.png)
 
 
 All of them obviously require webhook url.
@@ -40,9 +40,9 @@ Input the message ID to edit it's message on.
 Input the message ID to delete it.
 
 
----
+## Get webhook message
 
-Open for Pull requests on this project and issues encountered.
+To read a message sent. Requires the message's ID.
 
 ---
 
