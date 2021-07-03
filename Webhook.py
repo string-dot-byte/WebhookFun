@@ -13,11 +13,12 @@ print('''
         3. Send webhook message
         4. Edit webhook message
         5. Delete webhook message
+        6. Get webhook message
 ''')
 
 option = int(input('Select option >'))
 
-if option not in [1, 2, 3, 4, 5]:
+if option not in [1, 2, 3, 4, 5, 6]:
     print('Lol that\'s not a valid option.')
     exit()
 
@@ -52,3 +53,7 @@ elif option == 4:
 elif option == 5:
     messageId = input('Insert message ID >')
     requests.delete(webhookUrl + '/messages/' + messageId)
+elif option == 6:
+    messageId = input('Insert message ID >')
+    print(requests.get(webhookUrl + '/messages/' + messageId).json()['content'])
+    
