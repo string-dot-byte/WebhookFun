@@ -46,7 +46,7 @@ To read a message sent by the webhook. Requires the message's ID.
 
 ---
 
-Just for eductional purposes and fun. Do not use this tool if you do not have the mutual consent to the target's webhook owner.
+Just for educational purposes and fun. Do not use this tool if you do not have the mutual consent to the target's webhook owner.
 Not responsible for any abuse using my tool.
 
 **DO NOT ABUSE DISCORD RATE LIMITS!!! RESPECT A MAXIMUM OF 30 REQUESTS PER MINUTE!!!**
